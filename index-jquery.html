@@ -1,0 +1,10 @@
+Enter your text here: <input/>
+<br/>
+You just entered: <span></span>
+<script src="jquery.js"></script>
+<script>
+$("input").on("keyup", function(event){
+	console.log("input onKeyup is called.");
+	$("span")[0].innerHTML = event.target.value;
+});
+</script>

@@ -1,0 +1,11 @@
+Enter your text here: <input/>
+<br/>
+You just entered: <span></span>
+<script>
+var inputDOM = document.getElementsByTagName("input");
+inputDOM[0].addEventListener("input", function(){
+	console.log("input/change listener is called.");
+	var spanDOMs = document.getElementsByTagName("span");
+	spanDOMs[0].innerHTML = this.value;
+});
+</script>
