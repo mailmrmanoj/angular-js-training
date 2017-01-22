@@ -11,5 +11,8 @@ This is done using three ways
 
 # 2. Todo items application in angular.js
 You will use angular's inbuilt directive, ng-repeat to display a list of items
+
 You will use ng-click to add a new todo item to the list of todos
+
 You will use ng-click to delete an item from the list as well
+
