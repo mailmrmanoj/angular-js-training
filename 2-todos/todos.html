@@ -1,0 +1,31 @@
+<body ng-app="todosApp">
+	<link rel='stylesheet' type='text/css' href='css/font-awesome.css'>
+	<link rel='stylesheet' type='text/css' href='css/bootstrap.css'> 
+	<div ng-controller="mainController" class="container" style="margin-top:50px;">
+		<div class="row">
+			<div class="form-group col-md-9">
+				<input type="text" class="form-control" id="newTodo" ng-model="newTodo">
+			</div>
+			<div class="col-md-1">
+				<div style="border-radius:50%;background-color:black;text-align:center;" ng-click="addTodo()">
+					<i class="fa fa-plus fa-3x" style="color:white;"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row" ng-repeat="todo in todos">
+			<div class="form-group col-md-9">
+				{{todo}}
+			</div>
+			<div class="col-md-1">
+				<div style="border-radius:50%;background-color:black;text-align:center;" ng-click="deleteTodo($index)">
+					<i class="fa fa-minus fa-3x" style="color:white;"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</body>
+
+

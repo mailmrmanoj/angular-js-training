@@ -3,7 +3,7 @@ Enter your text here: <input/>
 You just entered: <span></span>
 <script src="jquery.js"></script>
 <script>
-$("input").on("keyup", function(event){
+$("input").on("input", function(event){
 	console.log("input onKeyup is called.");
 	$("span")[0].innerHTML = event.target.value;
 });
