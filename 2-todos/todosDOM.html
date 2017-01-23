@@ -1,0 +1,23 @@
+<body>
+	<link rel='stylesheet' type='text/css' href='css/font-awesome.css'>
+	<link rel='stylesheet' type='text/css' href='css/bootstrap.css'> 
+	<div  class="container" style="margin-top:50px;">
+		<div class="row">
+			<div class="form-group col-md-9">
+				<input type="text" class="form-control" id="newTodoItem" >
+			</div>
+			<div class="col-md-1">
+				<div style="border-radius:50%;background-color:black;text-align:center;" onClick="addTodo(this)">
+					<i class="fa fa-plus fa-3x" style="color:white;"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row" id="todosList"" >
+		</div>
+	</div>
+	<script src="string-format.js"></script>
+	<script src="appDOM.js"></script>
+</body>
+
+
