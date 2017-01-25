@@ -15,7 +15,7 @@
 		
 		<div class="row" ng-repeat="todo in todos">
 			<div class="form-group col-md-9">
-				{{todo}}
+				{{$index + 1}}. {{todo}}
 			</div>
 			<div class="col-md-1">
 				<div style="border-radius:50%;background-color:black;text-align:center;" ng-click="deleteTodo($index)">

@@ -1,0 +1,45 @@
+<html ng-app="simpleDirectivesApp">
+  <head>
+    <link rel="stylesheet" href="css/app.css"/>
+		<link rel='stylesheet' type='text/css' href="css/bootstrap.css""> 
+  </head>
+  <body ng-controller="myCtrl">
+		<div ng-if="showIfContent" class="container">This text is inside ngIf directive</div>
+		
+		<div ng-show="showNgShowContent" class="container">This text is inside ngShow directive</div>
+		
+		<div class="container">
+			<button ng-disabled="showNgDisabledContent" class="btn btn-primary">A simple buttoon</button>
+		</div>
+		<div class="container">
+			<input ng-readonly="disableInputBox" class="form-control"/>
+		</div>
+		
+		<div class="container">
+			<div class="checkbox">
+				<label> 
+					<input type="checkbox" ng-model="all"> Check all
+				</label>
+			</div>
+			<div class="checkbox">
+				<label> 
+					<input type="checkbox" ng-model="all"> Volvo
+				</label>
+			</div>
+			<div class="checkbox">
+				<label> 
+					<input type="checkbox" ng-model="all"> Ford
+				</label>
+			</div>
+			<div class="checkbox">
+				<label> 
+					<input type="checkbox" ng-model="all"> Mercedes
+				</label>
+			</div>
+
+		</div>
+
+		<script src="js/angular.js"></script>
+    <script src="js/appTwo.js"></script>
+  </body>
+</html>

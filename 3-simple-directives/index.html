@@ -1,0 +1,23 @@
+<html ng-app="simpleDirectivesApp">
+  <head>
+    <link rel="stylesheet" href="css/app.css"/>
+
+  </head>
+  <body ng-controller="myCtrl">
+
+    <div class="container">
+      <table ng-show="showAll"><tbody>
+        <col width="500">
+				<!-- refer ng-style in angular.js file @ ln#25096 -->
+        <tr ng-repeat="note in notes track by $index" class="note-item" ng-style="{ 'background-color' : getColor($index)}">
+        <td>{{note}}</td>
+      </tr>
+      </tbody></table>
+      <br/>
+      <br/>
+      <button ng-click="showAll = !showAll"><h3>Toggle Notes</h3></button>
+    </div>
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

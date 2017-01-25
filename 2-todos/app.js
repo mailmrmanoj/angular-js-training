@@ -8,12 +8,10 @@ todosApp.controller("mainController", function($scope, $interval){
 	];
 
 	$scope.addTodo = function(){
-		console.log("add a todo func is called..");
 		$scope.todos.push($scope.newTodo);
 	}
 
 	$scope.deleteTodo = function(itemIndex){
-		console.log("remove a todo func is called..");
 		$scope.todos.splice(itemIndex, 1);
 	}
 });
