@@ -16,3 +16,12 @@ You will use ng-click to add a new todo item to the list of todos
 
 You will use ng-click to delete an item from the list as well
 
+# 3. A cursory view of inbuilt angular directives
+ng-show, ng-hide
+
+ng-max, ng-min, ng-readonly, ng-disabled
+
+# 4. Writing our own directive
+First, we will see how to write a phone number input box using native DOM
+
+Next, we will do the same work by building a custom angular directive and re-using it wherever we want.

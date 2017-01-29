@@ -9,10 +9,14 @@
 		<div ng-show="showNgShowContent" class="container">This text is inside ngShow directive</div>
 		
 		<div class="container">
-			<button ng-disabled="showNgDisabledContent" class="btn btn-primary">A simple buttoon</button>
+			<form name="myForm">
+				<input type="number" />        
+				<button ng-disabled="!myForm.$valid" class="btn btn-primary">A simple buttoon</button>
+			</form>
 		</div>
+
 		<div class="container">
-			<input ng-readonly="disableInputBox" class="form-control"/>
+			<input ng-readonly="disableInputBox" class="form-control" value="hell"/>
 		</div>
 		
 		<div class="container">

@@ -5,11 +5,6 @@ simpleDirectivesApp.controller('myCtrl', function($scope){
   var initColors = [ "red", "blue", "yellow", "green"]
   $scope.showAll = false;
 	
-  $scope.getRandColor = function(){
-    var randNum = Math.floor(Math.random() * initColors.length )
-    return initColors[randNum]
-  }
-	
   $scope.getColor = function(idx){
     return initColors[idx % 3]
   }
