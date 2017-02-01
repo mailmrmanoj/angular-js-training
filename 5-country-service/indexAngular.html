@@ -1,0 +1,34 @@
+<html ng-app="cou">
+	<link rel='stylesheet' type='text/css' href='bootstrap.css'>
+	<style> .title{ color: #cccccc; }</style>
+	<body ng-controller="mainController">
+		<h3 class="title">Select a country</h3>
+		<div class="container">
+			<select class="form-control" ng-model="countryName" ng-change="setLanguages()">
+				<option ng-repeat="country in countries">
+					{{country.name}}
+				</option>
+			</select>
+		</div>
+		<h3 class="title">Select a language</h3>
+		<div class="container">
+			<select class="form-control" ng-model="languageName">
+				<option ng-repeat="language in languages">
+					{{language}}
+				</option>
+			</select>
+		</div>
+		<hr/>
+		<h3 class="title">You have chosen the country:</h3>
+		<div class="container">
+			{{ countryName | demoCapitalize}}
+		</div>
+		
+		<h3 class="title">You have chosen the language:</h3>
+		<div class="container">
+			{{ languageName }}
+		</div>
+		<script src="angular.js"></script>
+		<script src="appAngular.js"></script> 
+	</body>
+</html>

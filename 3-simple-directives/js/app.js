@@ -19,6 +19,3 @@ simpleDirectivesApp.controller('myCtrl', function($scope){
   ]  
 })
 
-var h1Elems = document.getElementsByTagName("h1");
-h1Elems.css("color", "white");
-h1Elems[0].css({ "background-color" : "black" });

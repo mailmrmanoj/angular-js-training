@@ -3,22 +3,41 @@
     <link rel="stylesheet" href="css/app.css"/>
 		<link rel='stylesheet' type='text/css' href="css/bootstrap.css""> 
   </head>
+	<style>
+	.title{
+		color: #cccccc;
+	}
+	</style>
   <body ng-controller="myCtrl">
+		<!-- A simple custom directive -->
+		<h3 class="title">A Simple Directive</h3>
+		<div class="container">
+			<hello-world> 
+			</hello-world>
+		</div>
+		<h3 class="title"> A simple directive with an argument</h3>
+		<div class="container">
+			<hello-with-name name="saran"></hello-with-name>
+		</div>
+		<!-- Most commonly used angularJs directives are explained below -->
+		<h3 class="title"> ngIf directive</h3>
 		<div ng-if="showIfContent" class="container">This text is inside ngIf directive</div>
-		
+		<h3 class="title"> ngShow directive</h3>
 		<div ng-show="showNgShowContent" class="container">This text is inside ngShow directive</div>
 		
+		<h3 class="title"> ngDisabled directive</h3>
 		<div class="container">
 			<form name="myForm">
 				<input type="number" />        
 				<button ng-disabled="!myForm.$valid" class="btn btn-primary">A simple buttoon</button>
 			</form>
 		</div>
-
+		<h3 class="title"> ngReadonly directive</h3>
 		<div class="container">
 			<input ng-readonly="disableInputBox" class="form-control" value="hell"/>
 		</div>
-		
+
+		<h3 class="title"> ngChecked/ngModel directive</h3>
 		<div class="container">
 			<div class="checkbox">
 				<label> 
@@ -42,7 +61,6 @@
 			</div>
 
 		</div>
-
 		<script src="js/angular.js"></script>
     <script src="js/appTwo.js"></script>
   </body>

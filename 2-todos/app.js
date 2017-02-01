@@ -15,3 +15,5 @@ todosApp.controller("mainController", function($scope, $interval){
 		$scope.todos.splice(itemIndex, 1);
 	}
 });
+
+
