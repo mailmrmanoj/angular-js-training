@@ -29,4 +29,4 @@ Next, we will do the same work by building a custom angular directive and re-usi
 # 5. Writing our own services and filters
 A service called `CountryService` will be written that queries a remote web service to query all countries' names and languages.
 
-A filter called `demoCapitalize' will be written that upper-cases the input word
+A filter called `demoCapitalize` will be written that upper-cases the input word
