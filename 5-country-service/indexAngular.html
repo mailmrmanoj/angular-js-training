@@ -5,17 +5,13 @@
 		<h3 class="title">Select a country</h3>
 		<div class="container">
 			<select class="form-control" ng-model="countryName" ng-change="setLanguages()">
-				<option ng-repeat="country in countries">
-					{{country.name}}
-				</option>
+				<option ng-repeat="country in countries">{{country.name}}</option>
 			</select>
 		</div>
 		<h3 class="title">Select a language</h3>
 		<div class="container">
 			<select class="form-control" ng-model="languageName">
-				<option ng-repeat="language in languages">
-					{{language}}
-				</option>
+				<option ng-repeat="language in languages">{{language}}</option>
 			</select>
 		</div>
 		<hr/>

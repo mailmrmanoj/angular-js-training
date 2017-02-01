@@ -24,13 +24,16 @@ var formatPhoneNumber = function(value){
 var rawValue = "";
 
 //As mentioned  here https://developer.mozilla.org/en/docs/Web/Events/keypress, keypress is not receiving backspace event. So, using keyup event.
+// inputElement.addEventListener("keyup", function(event){
+// });
 inputElement.onkeyup = function(event){
 	console.log("event.keyCode is, ", event.keyCode, " And the corresponding character is ", String.fromCharCode(event.keyCode));
 	errorElement.innerHTML = "";
 	// Key code for TAB character. For some reasons, Alt+Tab to switch window triggers an input event.
 	if (event.keyCode == 9) {
 		return false;
-	} else if (event.keyCode != 8) {
+	}//backspace key....
+	else if (event.keyCode != 8) {
 		rawValue = rawValue + String.fromCharCode(event.keyCode);
 	} else {
 		rawValue = rawValue.substring(0, rawValue.length -1 );
@@ -42,6 +45,11 @@ inputElement.onkeyup = function(event){
 	}
 	return false;
 };
+
+// enter a key
+// it triggers keydown/keypress event
+// it updates the input control
+// it triggers keyup event
 
 //this is needed for some reason, keyup doesn't stop when the maximum limit of ten characters is reached.
 inputElement.onkeypress = function(event){

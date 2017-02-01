@@ -1,6 +1,18 @@
 var phoneNumberDirectiveApp = angular.module("phoneNumberDirectiveApp", []);
 
 
+phoneNumberDirectiveApp.directive("myButton", function(){
+	return {
+		template : "<button>hello world</button>",
+		link : function(scope, element, attrs){
+			var buttonElement = element[0];
+			buttonElement.addEventListener("click", function(){
+				alert("You just clicked the button added by directive");
+			})
+		}
+	}
+});
+
 phoneNumberDirectiveApp.directive("phoneNumberInput", function(){
 	return {
 		template: '<div>\

@@ -6,12 +6,14 @@ simpleDirectivesApp.controller('myCtrl', function($scope){
 	$scope.showNgDisabledContent = true;
 
 	$scope.disableInputBox = true;
-
 });
 
-simpleDirectivesApp.directive("helloWorld", function(){
+//Directive definition object....
+// template, restrict, link,
+simpleDirectivesApp.directive("helloWorld", function() {
 	return {
-		template : "Hello world,"
+		restrict : "A", 
+		template : "Hello world. We started our session late today<br/>"
 	}
 });
 
