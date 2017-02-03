@@ -27,6 +27,7 @@ First, we will see how to write a phone number input box using native DOM
 Next, we will do the same work by building a custom angular directive and re-using it wherever we want.
 
 # 5. Writing our own services and filters
-A service called `CountryService` will be written that queries a remote web service to query all countries' names and languages.
-
+A service called `CountryService` will be written that queries a remote web service to query all countries' names and languages.  
 A filter called `demoCapitalize` will be written that upper-cases the input word
+# 6. Using Ui-router with nested views
+This is a copy-paste of the example discussed here `https://scotch.io/tutorials/angular-routing-using-ui-router`. Please refer.
